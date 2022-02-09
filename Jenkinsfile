@@ -10,7 +10,6 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'docker-compose up '
-				bat 'docker run -p 0.0.0.0:3000:3000/tcp dataengineeringjenkins2'
             }
         }
     }
