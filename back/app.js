@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
 const session = require('express-session');
-        
+const cors = require('cors')
+        app.use(cors()) 
         app.use(
             session({
                 secret: 'secret string',
